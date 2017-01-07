@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Email Spoof</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+        <div class="container" style="max-width: 600px;">
+            <center>
+                <h1>
+                    <font color="" face="Times New Roman">Email Spoofing</font>
+                </h1>
+            </center>
+            <form class="form-horizontal" id="formData" name="formData" method="post">
+                <div class="form-group">
+                    <label class="control-label col-xs-3">From Name:</label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="fromname" name="fromname" placeholder="Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-3">From Email:</label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="fromemail"  name="fromemail" required placeholder="example@domain.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-3">To Email:</label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="toemail"  name="toemail" required placeholder="example@domain.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-3">Subject :</label>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="subject"  name="subject" required placeholder="Subject Message">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-xs-3">Message :</label>
+                    <div class="col-xs-6">
+                        <textarea rows="3" class="form-control" id="message" name="message" required placeholder="Put message here"></textarea>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <center>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary add" value="Send">
+                </div>
+            </center>
+        </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+	<script src="js/send.js"></script>
+    </body>
+</html>
